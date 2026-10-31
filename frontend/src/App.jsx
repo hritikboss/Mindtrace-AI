@@ -128,7 +128,7 @@ function App() {
       {/* Mobile top bar */}
       <header className="mobile-topbar md:hidden">
         <button onClick={() => navigate("dashboard")} className="flex items-center gap-2.5" aria-label="MindTrace home">
-          <span className="brand-mark flex h-9 w-9 items-center justify-center rounded-xl text-base font-bold text-white">M</span>
+          <img src="/mindtrace-logo.png" alt="MindTrace AI" className="h-9 w-9 object-contain"/> 
           <span className="brand-word text-lg font-bold tracking-tight">MindTrace</span>
         </button>
         <ThemeToggle theme={theme} onToggle={toggleTheme} compact />
