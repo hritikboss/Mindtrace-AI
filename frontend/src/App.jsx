@@ -15,6 +15,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import mindtraceLogo from "./assets/mindtrace-logo.png";
 
 const courses = [
   {
@@ -197,9 +198,7 @@ function Sidebar({ page, navigate, onLogout, theme, onToggleTheme }) {
     <aside className="sidebar fixed left-0 top-0 z-20 hidden h-screen flex-col md:flex md:w-20 lg:w-64">
       <div className="sidebar__brand px-4 py-7 lg:px-7 lg:py-8">
         <div className="flex items-center justify-center gap-3 lg:justify-start">
-          <span className="brand-mark drift flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-lg font-bold text-white">
-            M
-          </span>
+         <img src={mindtraceLogo} alt="MindTrace AI" className="h-10 w-10 shrink-0 object-contain"/>
           <h1 className="brand-word hidden text-2xl font-bold tracking-tight lg:block">
             MindTrace
           </h1>
